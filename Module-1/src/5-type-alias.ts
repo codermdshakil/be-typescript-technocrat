@@ -8,6 +8,17 @@
  * - Variable type alias
  * - function type alias
  * 
+ * Diffetents between type and interface
+ * 
+ * 
+ * Feature                  | type alias             | interface
+ * --------------------------------------------------------------
+ * Object type              | ✅ Yes                | ✅ Yes
+ * Primitive/Union types    | ✅ Yes                | ❌ No
+ * Extending (inheritance)  | ✅ via & implement    | ✅ via extends
+ * Declaration merging      | ❌ No                 | ✅ Yes
+ * Reopening definition     | ❌ No                 | ✅ Yes
+ * 
  * */ 
 
     // object type alias
@@ -72,6 +83,7 @@
     
     // console.log(add(10, 20));
     // console.log(add(10, 20));
+
 
 
 
