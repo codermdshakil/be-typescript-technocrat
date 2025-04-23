@@ -4,8 +4,14 @@
  * Topics:
  * 
  * 1. Spread Operator
- * 2. Rest operator
+ *   - spread operator in array
+ *   - spread operator in object
+ * 
+ * 2. Rest operator - to reciving dynamic opetators ex : ...friends:string[]
+ * 
  * 3. Destructuring
+ *   - object destructuring - order not matter
+ *   - array destructuring  - order matter
  * 
  * */ 
 
@@ -22,15 +28,6 @@ const brothers2:string[] = ['Shahin Khan', 'Masum Mia'];
 // copy array element
 const copyArray = [...brothers2];
 // console.log(brothers2 === copyArray); // false because reference differents
- 
-// Object Destructuring 
-
-const person = {
-    name:'Shakil Ahmed',
-    age:20,
-    goal:'CEO | Billioniare',
-    currentTarget:'Software Engineer'
-};
 
 
 // 1.2. Spread Operator in object
@@ -49,11 +46,33 @@ const mentors2 = {
 
 // combined two object in one
 const allMentors = {...mentors1, ...mentors2};
-console.log(allMentors);
+// console.log(allMentors);
 
 
-// 2. destucturing
+
+// Rest Operators
+// ...friends:string[] -> rest operator recived dynamic parameter
+
+const friendsList = (...friends:string[]):void => {
+   friends.forEach((friend) => console.log(friend))
+}
+
+friendsList('Shakil', 'Asraf', 'Nadu', 'Nadim', 'Kalam');
+
+
+// 2. destucturing object
 // - don't matter order
+
+ 
+// Object Destructuring 
+
+const person = {
+    name:'Shakil Ahmed',
+    age:20,
+    goal:'CEO | Billioniare',
+    currentTarget:'Software Engineer'
+};
+
 
 const { age, goal, currentTarget }= person;
 // console.log(currentTarget);
