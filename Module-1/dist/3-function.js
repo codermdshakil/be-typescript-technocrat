@@ -14,4 +14,5 @@ const sum = add(10, 40);
 // }
 // const sum1 = AddTwoNumber(30, 40); // 30 + 40 =  70 
 // const nums:number[] = [2,4,7];
-// const newArr = nums.m
+// const newArr = nums.map((elm:number) => elm * elm);
+// console.log(newArr);
