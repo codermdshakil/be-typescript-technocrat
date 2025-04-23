@@ -52,6 +52,22 @@ const allMentors = {...mentors1, ...mentors2};
 console.log(allMentors);
 
 
+// 2. destucturing
+// - don't matter order
+
+const { age, goal, currentTarget }= person;
+// console.log(currentTarget);
+
+
+// Array destructuring 
+// - order matters
+const friends = ['Noyon', 'Nadim', 'Shakil',];
+
+const [first, second, third] = friends;
+
+// console.log(first); // Noyon
+// console.log(second); // Nadim
+// console.log(third); // Shakil
 
 }
 
