@@ -71,7 +71,7 @@ const fullStackDev : FullStackDevelopers = {
     desgination2:'Full Stack Engineer'
 };
 
-console.log(fullStackDev);
+// console.log(fullStackDev);
 
 
 

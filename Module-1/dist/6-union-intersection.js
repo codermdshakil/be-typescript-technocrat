@@ -25,5 +25,5 @@
         desgination1: 'Junior Developer',
         desgination2: 'Full Stack Engineer'
     };
-    console.log(fullStackDev);
+    // console.log(fullStackDev);
 }
