@@ -10,6 +10,10 @@
  * 
  * 
  * - ts-node-dev Install 
+ * ### Show output in console for typescript file
+ * 
+ * -  `npm i -g ts-node-dev`
+ * - ts-node-dev --respawn --transpile-only ./src/test.ts(path from folder)
  * 
 */
 
