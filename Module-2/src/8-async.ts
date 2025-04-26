@@ -19,6 +19,12 @@
      * 
     */
 
+    // Summary: 
+    // 1. Promise 
+    // 2. async/ await
+    // 3. try/catch
+
+
 
     // Simulate 
     // const createPromise = () : Promise<string> => {
