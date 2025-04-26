@@ -1,22 +1,16 @@
 
 {
     /**
-     * Topics
-     * 
-     * 
-     * 
+     * Topics Class + Object
+  
      * - class - is a blueprint to create objects
-     * 
-     * 
      * 
      * Modifier     | Meaning                                               | Where accessible
      * public       -> Default. Accessible everywhere.                      | Inside class + outside class
      * private      -> Accessible only inside the same class.               | Only inside the class
      * protected    -> Accessible inside the class and subclasses.          | Class + Subclass
      * readonly     -> Value can be read but cannot be changed after initialization. | Everywhere (but no modification)
-     * 
-     * - object
-     * 
+     *  
     */
 
     // create class   
@@ -54,7 +48,34 @@
     // const person3 = new Person('Nadim Hassan', 21);
 
 
-   
+    class Animal {
+
+        // access modifier
+        
+        // private name:string;
+        // private species:string;
+        // protected sound:string;
+
+        // parameter properties with access modifiers
+        constructor(private name:string, protected species:string,readonly sound:string){
+            this.name = name;
+            this.species = species;
+            this.sound = sound;
+        }
+
+        // method : normal function because arrow function does not work this
+        makeSound(){
+            console.log(this.sound);
+        }
+    }
+
+
+    // create using class object instants and call them
+    // const dog = new Animal('Germand Shepard', 'Dog', 'Ghew Ghew');
+    // const cat = new Animal('Deshi Bilai', 'cat', 'mew mew');
+
+    // cat.makeSound();
+
 
 
 
