@@ -11,7 +11,7 @@
      * 
      * 1. IS-A (Inheritance) -> Child inherits qualities from Parent 👨‍👧
      * 2. HAS-A (Composition) ->  Person owns Car, House, Phone 🚗🏠📱
-     * 3. "Can do" / "Can have" ->	Composition
+     * 3. 'Can do' / 'Can have' ->	Composition
      * 
      * In shorts
      * 
