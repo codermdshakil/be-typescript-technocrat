@@ -38,9 +38,59 @@
 
     // here getSleeping method is a polymorphisom
     
-    getSleepingHours(person1);
-    getSleepingHours(person2);
-    getSleepingHours(person3);
+    // getSleepingHours(person1);
+    // getSleepingHours(person2);
+    // getSleepingHours(person3);
+
+
+
+    // Example - 2 of Polymorphisom
+
+    class Shape{
+        getArea():number{
+            return 0;
+        }
+    }
+
+    // Circle 
+    class Circle extends Shape{
+        radius:number;
+        constructor(radius:number){
+            super();
+            this.radius = radius;
+        }
+        getArea():number {
+             return Math.PI * (this.radius * this.radius);
+        }
+    };
+
+    // Rectangle 
+    class Rectangle extends Shape{
+        height:number;
+        widht:number;
+        constructor(height:number, width:number){
+            super();
+            this.height = height;
+            this.widht = width;
+        }
+        getArea():number {
+            return Math.PI * this.height * this.widht ;
+        }
+    };
+
+
+    const getShapeArea = (param:Shape) => {
+        param.getArea();
+    }
+
+    const cirle1 = new Circle(10);
+    const regtangle1 = new Rectangle(10, 8);
+    console.log(cirle1.getArea());
+    console.log(regtangle1.getArea());
+
+ 
+ 
+
 
 
 
