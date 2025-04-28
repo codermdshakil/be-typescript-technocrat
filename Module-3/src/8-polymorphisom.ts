@@ -2,8 +2,8 @@
     /**
      * Polymorphisom - বহুরপি
      * 
-     *- here getSleeping method is a polymorphisom
-     * 
+     * - here getSleeping method is a polymorphisom
+     * - here getArea mehthos is a polymorphisom
     */
 
     class Person{
