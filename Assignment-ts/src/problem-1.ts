@@ -9,7 +9,7 @@ const repeatString = (stringValue:string, numberValue:number):void => {
 
      }else{
 
-        for(let i = 1; i <= numberValue; i++ ){
+        for(let i:number = 1; i <= numberValue; i++ ){
 
             result = result + stringValue;
     
